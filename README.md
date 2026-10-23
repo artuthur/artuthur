@@ -31,13 +31,13 @@ Chaque dépôt commence par l'essentiel (objectif, architecture, démarrage rapi
 
 ## Compétences
 
-**Systèmes** : Linux (Debian/Ubuntu), Windows Server, Active Directory, Office 365
-**Automatisation et IaC** : Ansible (rôles, Vault, `ansible-lint --profile production`), Vagrant, Terraform
-**Conteneurs et CI/CD** : Docker, Docker Swarm, GitLab CI, registre de conteneurs
-**Réseau et sécurité** : Cisco IOS, HAProxy, Traefik, PKI/TLS, UFW
-**Supervision et support** : Zabbix, GLPI
-**Bases de données et scripts** : PostgreSQL, SQL, Python, Bash
-**Cloud** : notions GCP, Azure, OVH Cloud
+- **Systèmes** : Linux (Debian/Ubuntu), Windows Server, Active Directory, Office 365
+- **Automatisation et IaC** : Ansible (rôles, Vault, `ansible-lint --profile production`), Vagrant, Terraform
+- **Conteneurs et CI/CD** : Docker, Docker Swarm, GitLab CI, registre de conteneurs
+- **Réseau et sécurité** : Cisco IOS, HAProxy, Traefik, PKI/TLS, UFW
+- **Supervision et support** : Zabbix, GLPI
+- **Bases de données et scripts** : PostgreSQL, SQL, Python, Bash
+- **Cloud** : notions GCP, Azure, OVH Cloud
 
 ## Expérience
 
