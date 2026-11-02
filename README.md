@@ -18,14 +18,17 @@ Je n'apprends pas en suivant un tutoriel jusqu'au bout : je me fixe un objectif 
 
 ## Mes projets
 
-| Projet | Ce que j'y ai appris | Stack | État |
+Après Kubernetes, j'ai réorienté ma feuille de route vers l'environnement Microsoft (Active Directory, GPO, Microsoft 365), parce que c'est ce que demandent la plupart des offres de ma région : je veux savoir réaliser ces tâches concrètement avant d'arriver en poste.
+ 
+| Projet | Ce que j'y apprends | Stack | État |
 |---|---|---|---|
 | [**lab-infra-as-code**](https://github.com/artuthur/lab-infra-as-code) | Mon premier projet d'infrastructure par le code : une architecture 3-tiers (load balancer, 2 serveurs web, base de données) provisionnée entièrement avec Ansible, répartition de charge et isolation réseau vérifiées | Vagrant, Ansible, HAProxy, Nginx, PostgreSQL | Terminé |
 | [**lab-cicd-pipeline**](https://github.com/artuthur/lab-cicd-pipeline) | GitLab CE auto-hébergé en HTTPS avec ma propre PKI, runner, registre de conteneurs et pipeline complet (lint, tests, build, déploiement). Résultat final : **reconstruction complète en 18 min, sans aucune action manuelle dans GitLab** | GitLab CE, GitLab CI, Docker, Ansible, Vagrant/VMware | Terminé |
-| lab-k8s-gitops | Découvrir Kubernetes avec un cluster multi-nœuds et le déploiement GitOps | k3s | Prochain projet |
+| lab-k8s-gitops | Découvrir Kubernetes en installant moi-même un cluster multi-nœuds avec kubeadm, sans distribution simplifiée, pour comprendre chaque composant, puis le déploiement GitOps | Kubernetes, kubeadm, containerd, Vagrant/VMware | En cours |
+| lab-windows-ad | Monter un environnement Microsoft d'entreprise entièrement à la main, sans automatisation, pour en maîtriser les bases : Active Directory, GPO, et Microsoft 365 / Intune dans la mesure du possible | Windows Server, Active Directory, GPO | Prévu |
+| Durcissement et supervision Windows | Sécuriser et superviser l'infrastructure de lab-windows-ad | Windows Server | Prévu |
+| Attaque et défense AD | Comprendre les attaques courantes contre Active Directory pour savoir les détecter et s'en protéger | Active Directory | Prévu |
 | lab-terraform-cloud | Provisionner une infrastructure cloud avec Terraform | Terraform | Prévu |
-| lab-hardening-monitoring | Durcir les systèmes et superviser l'infrastructure | | Prévu |
-| lab-attack-defense | Comprendre les attaques pour mieux s'en défendre | | Prévu |
 
 Chaque dépôt commence par l'essentiel (objectif, architecture, démarrage rapide), puis détaille mon cheminement : choix techniques, sécurité et limites, journal de bord.
 
