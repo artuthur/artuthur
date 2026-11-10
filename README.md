@@ -24,8 +24,8 @@ Après Kubernetes, j'ai réorienté ma feuille de route vers l'environnement Mic
 |---|---|---|---|
 | [**lab-infra-as-code**](https://github.com/artuthur/lab-infra-as-code) | Mon premier projet d'infrastructure par le code : une architecture 3-tiers (load balancer, 2 serveurs web, base de données) provisionnée entièrement avec Ansible, répartition de charge et isolation réseau vérifiées | Vagrant, Ansible, HAProxy, Nginx, PostgreSQL | Terminé |
 | [**lab-cicd-pipeline**](https://github.com/artuthur/lab-cicd-pipeline) | GitLab CE auto-hébergé en HTTPS avec ma propre PKI, runner, registre de conteneurs et pipeline complet (lint, tests, build, déploiement). Résultat final : **reconstruction complète en 18 min, sans aucune action manuelle dans GitLab** | GitLab CE, GitLab CI, Docker, Ansible, Vagrant/VMware | Terminé |
-| [**lab-k8s-gitops**](https://github.com/artuthur/lab-k8s-gitops) | Découvrir Kubernetes en installant moi-même un cluster multi-nœuds avec kubeadm, sans distribution simplifiée, pour comprendre chaque composant, puis le déploiement GitOps | Kubernetes, kubeadm, containerd, Vagrant/VMware | En cours |
-| lab-windows-ad | Monter un environnement Microsoft d'entreprise entièrement à la main, sans automatisation, pour en maîtriser les bases : Active Directory, GPO, et Microsoft 365 / Intune dans la mesure du possible | Windows Server, Active Directory, GPO | Prévu |
+| [**lab-k8s-gitops**](https://github.com/artuthur/lab-k8s-gitops) | Un cluster Kubernetes de 3 nœuds que j'ai installé moi-même avec kubeadm, sans distribution simplifiée, pour comprendre chaque composant (runtime, réseau des pods, répartition de charge, Gateway API), puis piloté en GitOps par Argo CD : une modification faite à la main dans le cluster est annulée dans la minute. Résultat final : **reconstruction complète depuis le dépôt en 15 min, sans aucune intervention manuelle** | Kubernetes, kubeadm, containerd, Calico, MetalLB, Envoy Gateway, Argo CD, Ansible | Terminé |
+| lab-windows-ad | Monter un environnement Microsoft d'entreprise entièrement à la main, sans automatisation, pour en maîtriser les bases : Active Directory, GPO, et Microsoft 365 / Intune dans la mesure du possible | Windows Server, Active Directory, GPO | En cours |
 | Durcissement et supervision Windows | Sécuriser et superviser l'infrastructure de lab-windows-ad | Windows Server | Prévu |
 | Attaque et défense AD | Comprendre les attaques courantes contre Active Directory pour savoir les détecter et s'en protéger | Active Directory | Prévu |
 | lab-terraform-cloud | Provisionner une infrastructure cloud avec Terraform | Terraform | Prévu |
@@ -36,7 +36,7 @@ Chaque dépôt commence par l'essentiel (objectif, architecture, démarrage rapi
 
 - **Systèmes** : Linux (Debian/Ubuntu), Windows Server, Active Directory, Office 365
 - **Automatisation et IaC** : Ansible (rôles, Vault, `ansible-lint --profile production`), Vagrant, Terraform
-- **Conteneurs et CI/CD** : Docker, Docker Swarm, GitLab CI, registre de conteneurs
+- **Conteneurs, Kubernetes et CI/CD** : Docker, Docker Swarm, Kubernetes (kubeadm, containerd, Calico, MetalLB, Gateway API), Argo CD (GitOps), GitLab CI, registre de conteneurs
 - **Réseau et sécurité** : Cisco IOS, HAProxy, Traefik, PKI/TLS, UFW
 - **Supervision et support** : Zabbix, GLPI
 - **Bases de données et scripts** : PostgreSQL, SQL, Python, Bash
@@ -49,7 +49,7 @@ Chaque dépôt commence par l'essentiel (objectif, architecture, démarrage rapi
 
 ## En ce moment
 
-- Je prépare **lab-k8s-gitops** pour découvrir Kubernetes
+- Je prépare **lab-windows-ad**, premier du bloc Microsoft, avec Active Directory et GPO montés entièrement à la main.
 - Je me forme en autonomie sur la cybersécurité et les réseaux : préparation de la certification **Fortinet NSE 1**, parcours **Cisco Skills for All** (badges *Network Basics* et *Network Security* obtenus)
 
 ## Me contacter
